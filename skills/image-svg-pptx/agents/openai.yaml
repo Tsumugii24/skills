@@ -1,0 +1,4 @@
+interface:
+  display_name: "Image SVG PPTX"
+  short_description: "Convert images into editable PowerPoint slides."
+  default_prompt: "Use $image-svg-pptx to convert this slide image into SVG and an editable PPTX."

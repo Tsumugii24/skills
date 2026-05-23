@@ -23,6 +23,7 @@ Only `SKILL.md` is required for a skill. Other folders are included when the ski
 
 | Skill | Purpose |
 | --- | --- |
+| [`image-svg-pptx`](skills/image-svg-pptx/) | Convert slide-like images into high-fidelity SVG and editable PowerPoint artifacts. |
 | [`paper-review`](skills/paper-review/) | Submit existing PDF papers to paperreview.ai, poll or fetch review reports, and save token, JSON, and Markdown artifacts. |
 
 ## Installing Locally
@@ -38,6 +39,7 @@ Install a skill into Codex by copying its folder into your Codex skills director
 
 ```powershell
 Copy-Item -Recurse -Force ./skills/paper-review "$env:USERPROFILE/.codex/skills/paper-review"
+Copy-Item -Recurse -Force ./skills/image-svg-pptx "$env:USERPROFILE/.codex/skills/image-svg-pptx"
 ```
 
 Restart Codex after installing or updating skills so the new metadata is discovered.
@@ -50,6 +52,7 @@ Validate a skill before committing:
 
 ```powershell
 python "$env:USERPROFILE/.codex/skills/.system/skill-creator/scripts/quick_validate.py" ./skills/paper-review
+python "$env:USERPROFILE/.codex/skills/.system/skill-creator/scripts/quick_validate.py" ./skills/image-svg-pptx
 ```
 
 For Python helper scripts, also run:
